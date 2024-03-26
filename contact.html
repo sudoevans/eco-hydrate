@@ -104,9 +104,9 @@
                 <div class="footer-socials pt-4">
                     <ul>
                         <li>info@majiyetufoundation.org</li>
-                        <li>Majiyetuofficial</li>
-                        <li>majiyetu_official</li>
-                        <li>majiyetuoficial</li>
+                        <li> <a href="https://www.facebook.com/MajiYetuFoundation/" class="fa-fa facebook">Facebook Eco-Hydrate</a></li>
+                        <li><a href="https://twitter.com/MajiYetuFound_" class="fa-fa twitter"> Twitter Eco-Hydrate</a></li>
+                        <li>Eco-Hydrate</li>
                     </ul>
 
                 </div>
@@ -123,31 +123,5 @@
     </footer>
     <!-- END: Footer -->
 
-
-    <script>
-        function submitForm() {
-            // Perform form submission logic here
-            
-            // Get form data
-            var firstName = document.querySelector('input[name="first-name"]').value;
-            var lastName = document.querySelector('input[name="last-name"]').value;
-            var email = document.querySelector('input[name="email"]').value;
-            var contactNumber = document.querySelector('input[name="contact-number"]').value;
-            var message = document.querySelector('textarea[name="message"]').value;
-            
-            // Send email to info@sume.org
-            var emailBody = "First Name: " + firstName + "\n" +
-                            "Last Name: " + lastName + "\n" +
-                            "Email: " + email + "\n" +
-                            "Contact Number: " + contactNumber + "\n" +
-                            "Message: " + message;
-            var mailtoLink = "mailto:info@majiyetufoundation.org?subject=Contact Form Submission&body=" + encodeURIComponent(emailBody);
-            window.location.href = mailtoLink;
-            
-            // Display thank you message
-            var form = document.getElementById("contact-form");
-            form.innerHTML = "<h2>Thank you! Someone will reach out!</h2>";
-        }
-    </script>
 </body>
 </html>
